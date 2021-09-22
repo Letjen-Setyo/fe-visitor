@@ -12,7 +12,7 @@ const CheckoutVisitor  = ({visitor}) => {
 
             try {
                 const body = { check_out,modified_by};
-                const response = await fetch(`http://localhost:5000/visitor/checkout/${visitor.id}`,{
+                const response = await fetch(`https://powerful-crag-17451.herokuapp.com/visitor/checkout/${visitor.id}`,{
                     method : "PUT",
                     headers : {"Content-Type" : "application/json"},
                     body : JSON.stringify(body) 

@@ -18,7 +18,7 @@ const InputVisitor = () => {
         e.preventDefault();
         try {
             const body = { name, company, address, idcard_number,viscard_number, phone, message,check_in, check_out ,created_by,modified_by};
-            const response = await fetch("http://localhost:5000/visitor",{
+            const response = await fetch("https://powerful-crag-17451.herokuapp.com/visitor",{
                 method : "POST",
                 headers : {"Content-Type" : "application/json"},
                 body : JSON.stringify(body)

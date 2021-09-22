@@ -11,7 +11,7 @@ const ListVisitor = () => {
     const deleteVisitor = async id => {
         try {
             
-            const deleteVisitor = await fetch(`http://localhost:5000/visitor/${id}`,
+            const deleteVisitor = await fetch(`https://powerful-crag-17451.herokuapp.com/visitor/${id}`,
             {
                 method : "DELETE"
             });
@@ -28,7 +28,7 @@ const ListVisitor = () => {
     const getVisitor = async() => {
         try {
             
-            const response =  await  fetch("http://localhost:5000/visitor/get-all");
+            const response =  await  fetch("https://powerful-crag-17451.herokuapp.com/visitor/get-all");
             const jsonData = await response.json();
             
             setVisitors(jsonData);
